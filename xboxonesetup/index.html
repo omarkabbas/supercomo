@@ -31,18 +31,18 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="/assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.0">
     
     
       
-        <title>Super COMO DOCs</title>
+        <title>Xbox One Controller Setup - Super COMO DOCs</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/application.982221ab.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.982221ab.css">
       
-        <link rel="stylesheet" href="/assets/stylesheets/application-palette.224b79ff.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
       
       
         
@@ -51,7 +51,7 @@
       
     
     
-      <script src="/assets/javascripts/modernizr.01ccdecf.js"></script>
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
     
     
       
@@ -60,7 +60,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="/assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
     
@@ -107,7 +107,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="/." title="Super COMO DOCs" class="md-header-nav__button md-logo">
+        <a href=".." title="Super COMO DOCs" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -123,7 +123,7 @@
               Super COMO DOCs
             </span>
             <span class="md-header-nav__topic">
-              
+              Xbox One Controller Setup
             </span>
           
         </div>
@@ -197,7 +197,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="/." title="Super COMO DOCs" class="md-nav__button md-logo">
+    <a href=".." title="Super COMO DOCs" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
@@ -233,7 +233,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/." title="Home" class="md-nav__link">
+    <a href=".." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -245,7 +245,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/arduinosetup/" title="Arduino for Teensy" class="md-nav__link">
+    <a href="../arduinosetup/" title="Arduino for Teensy" class="md-nav__link">
       Arduino for Teensy
     </a>
   </li>
@@ -257,7 +257,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/vescprep/" title="VESC Preparation" class="md-nav__link">
+    <a href="../vescprep/" title="VESC Preparation" class="md-nav__link">
       VESC Preparation
     </a>
   </li>
@@ -269,7 +269,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/autonomousfeature/" title="Autonomous Features" class="md-nav__link">
+    <a href="../autonomousfeature/" title="Autonomous Features" class="md-nav__link">
       Autonomous Features
     </a>
   </li>
@@ -281,7 +281,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/softsetup/" title="Car Software Setup" class="md-nav__link">
+    <a href="../softsetup/" title="Car Software Setup" class="md-nav__link">
       Car Software Setup
     </a>
   </li>
@@ -291,11 +291,18 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="/xboxonesetup/" title="Xbox One Controller Setup" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Xbox One Controller Setup" class="md-nav__link md-nav__link--active">
       Xbox One Controller Setup
     </a>
+    
   </li>
 
     
@@ -310,8 +317,23 @@
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
-
+                
+                  <a href="https://github.com/The-SS/super_como/edit/master/docs/xboxonesetup.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Xbox One Controller Setup</h1>
+                
+                <p>Xbox One Controller setup as another option to contol the car</p>
+<p>install sysfsutils -  sudo apt install sysfsutils
+open the configuration file with gksu gedit /etc/sysfs.conf
+Add this line in sysfs.conf –&gt; module/bluetooth/parameters/disable_ertm = 1
+Save and restart.</p>
+<p>go into /sys/module/bluetooth/parameters/</p>
+<p>sudo nano disable_ertm and change it from N to Y</p>
+                
+                  
+                
+              
               
                 
 
@@ -325,6 +347,27 @@
         
 <footer class="md-footer">
   
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../softsetup/" title="Car Software Setup" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Car Software Setup
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
@@ -337,7 +380,7 @@
       </div>
       
   <div class="md-footer-social">
-    <link rel="stylesheet" href="/assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
       <a href="https://github.com/The-SS/super_como/" class="md-footer-social__link fa fa-github"></a>
     
@@ -349,9 +392,9 @@
       
     </div>
     
-      <script src="/assets/javascripts/application.2ba8dec4.js"></script>
+      <script src="../assets/javascripts/application.2ba8dec4.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"/"}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>
