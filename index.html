@@ -245,94 +245,22 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Home
-      </label>
-    
     <a href="." title="Home" class="md-nav__link md-nav__link--active">
       Home
     </a>
     
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
+  </li>
+
     
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#parts-list" title="Parts List" class="md-nav__link">
-    Parts List
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assembly-steps" title="Assembly Steps" class="md-nav__link">
-    Assembly Steps
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prepare-the-lidar-connector" title="Prepare the Lidar Connector" class="md-nav__link">
-    Prepare the Lidar Connector
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#prepare-the-chassis" title="Prepare the Chassis" class="md-nav__link">
-    Prepare the Chassis
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-encoders-optional" title="Adding Encoders (Optional)" class="md-nav__link">
-    Adding Encoders (Optional)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#replace-the-chassis-springs" title="Replace the Chassis Springs" class="md-nav__link">
-    Replace the Chassis Springs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#prepare-the-teensy-teensy-pcb" title="Prepare the Teensy/ Teensy PCB" class="md-nav__link">
-    Prepare the Teensy/ Teensy PCB
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#prepare-the-decks-and-assemble-the-car" title="Prepare the Decks and Assemble the Car" class="md-nav__link">
-    Prepare the Decks and Assemble the Car
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
       
       
-      
-      
-    </ul>
-  
-</nav>
-    
+
+
+  <li class="md-nav__item">
+    <a href="assembly/" title="Car Assembly" class="md-nav__link">
+      Car Assembly
+    </a>
   </li>
 
     
@@ -413,77 +341,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#parts-list" title="Parts List" class="md-nav__link">
-    Parts List
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assembly-steps" title="Assembly Steps" class="md-nav__link">
-    Assembly Steps
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prepare-the-lidar-connector" title="Prepare the Lidar Connector" class="md-nav__link">
-    Prepare the Lidar Connector
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#prepare-the-chassis" title="Prepare the Chassis" class="md-nav__link">
-    Prepare the Chassis
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-encoders-optional" title="Adding Encoders (Optional)" class="md-nav__link">
-    Adding Encoders (Optional)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#replace-the-chassis-springs" title="Replace the Chassis Springs" class="md-nav__link">
-    Replace the Chassis Springs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#prepare-the-teensy-teensy-pcb" title="Prepare the Teensy/ Teensy PCB" class="md-nav__link">
-    Prepare the Teensy/ Teensy PCB
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#prepare-the-decks-and-assemble-the-car" title="Prepare the Decks and Assemble the Car" class="md-nav__link">
-    Prepare the Decks and Assemble the Car
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -498,338 +355,9 @@
                 
                 
                 <h1 id="super-como">Super COMO</h1>
-<p>Super COMO is a high-end 1/10-scale autonomous RC car initiative at the University of Texas at Dallas. This assembly guide is based on the initial car build which was prepared in partial fulfillment of the EE/CE/TE Senior Design project for Fall 2018-Spring 2019.</p>
-<h3 id="parts-list">Parts List</h3>
-<p>Below is a list of parts required for this build:</p>
-<ul>
-<li>Decks and 3D Printed Parts:<ul>
-<li>1x Hammerhead decks set<ul>
-<li>Deck 1 / Bottom deck</li>
-<li>Deck 2 / Top deck</li>
-<li>Deck 3/ LIDAR deck</li>
-</ul>
-</li>
-<li>1x Teensy PCB / Protoboard</li>
-<li>2x Encoder disks (black or white)</li>
-<li>2x Encoder mounts</li>
-<li>8x Ultrasonic mounts</li>
-<li>1x Larger battery hold-downs</li>
-</ul>
-</li>
-<li>Sensors:<ul>
-<li>1x Hokuyo UST-10LX laser range finder</li>
-<li>1x Stereolabs ZED camera</li>
-<li>3x ELP 1080p camera</li>
-<li>2x Sparkfun Digital breakout light encoder</li>
-<li>8x HC-SR04 ultrasonic sensor</li>
-<li>1x Razor 9DoF IMU</li>
-</ul>
-</li>
-<li>Computers and Microcomputers<ul>
-<li>Teensy 3.5 (3.6 will not work)</li>
-<li>Jetson TX2 with the TX2 development board</li>
-<li>VESC 11.0 electronic speed controller</li>
-</ul>
-</li>
-<li>Power Sources<ul>
-<li>Traxxas</li>
-<li>XTPower</li>
-</ul>
-</li>
-<li>Bolts, Nuts, and Spacers<ul>
-<li>Bolts<ul>
-<li>16x M0x0.25” bolts</li>
-<li>16x M2x10mm bolts</li>
-<li>6x M2.5x8mm bolts</li>
-<li>6x M2.5x10mm bolts
-<!-- - 3x M2.5x10mm ???--></li>
-<li>2x M3x6mm</li>
-<li>2x M3x6mm plastic</li>
-<li>4x M3x 8mm</li>
-<li>4x M3x10mm</li>
-<li>2x M3x10mm plastic</li>
-<li>14x M3x12mm (or 13??)</li>
-<li>4x M3x20mm</li>
-</ul>
-</li>
-<li>Nuts<ul>
-<li>16x M0 nuts</li>
-<li>16x M2 nuts</li>
-<li>3x M2.5 nuts</li>
-<li>6x M2.5 nuts</li>
-<li>12x M3 nuts</li>
-</ul>
-</li>
-<li>Spacers<ul>
-<li>2x M3 10mm plastic spacers</li>
-<li>4x M3 10mm spacers</li>
-</ul>
-</li>
-<li>Standoffs<ul>
-<li>10x M3 10mm metal Standoffs</li>
-</ul>
-</li>
-<li>4x Vibration dampers</li>
-</ul>
-</li>
-<li>Header Pins and Cables<ul>
-<li>8x 4-pin male headers</li>
-<li>2x 3-pin male headers</li>
-<li>8x 4-wire female-to-female connectors</li>
-<li>2x 3-wire male-to-female servo connectors</li>
-<li>1x SATA with power extension cable</li>
-</ul>
-</li>
-<li>Misc<ul>
-<li>Liquid white-out or black permanent marker</li>
-</ul>
-</li>
-</ul>
-<h3 id="assembly-steps">Assembly Steps</h3>
-<p>Follow steps below to assemble the car. While matching the holes on the decks to the proper component is relatively easy considering that most parts only fit in one logical configuration, the mapping between deck holes to the proper components are indicated in the figures below. Keep them in mind while assembling the car.</p>
-<p><a href="images/deck1.jpg">Deck 1</a>
-<!-- <img alt="deck1" src="images/deck1.jpg" title="Deck 1 mounting holes" /> --></p>
-<p><img src="images/deck1.jpg" data-canonical-src="images/deck1.jpg" width="800px" title="Deck 1 mounting holes" /></p>
-<ul>
-<li>Red rectangles (holes at corners): Ultrasonic sensor mounting hole</li>
-<li>Green rectangle (holes at corners): SSD mounting holes</li>
-<li>Purple rectangle (holes at corners and along the edge): Jetson mounting holes</li>
-<li>Yellow rectangle (holes at corners): IMU mounting holes</li>
-<li>Red circles: Deck 3 mounting holes</li>
-<li>Yellow circles: Deck 2 mounting holes</li>
-<li>Green circles: Deck 1 mounting holes (onto the chassis)</li>
-</ul>
-<p><a href="images/deck2.jpg">Deck 2</a>
-<!-- <img alt="deck2" src="images/deck2.jpg" title="Deck 2 mounting holes" /> --></p>
-<p><img src="images/deck2.jpg" data-canonical-src="images/deck2.jpg" width="800px" title="Deck 2 mounting holes" /></p>
-<ul>
-<li>Dotted red rectangle: Position of battery pack on top side (mounted with tape/Velcro)</li>
-<li>Dotted purple rectangle: Position of USB hub on bottom side (mounted with tape/Velcro)</li>
-<li>Green rectangle: ZED camera mounting holes (choose one)</li>
-<li>Yellow rectangle (holes at corners): ELP mounts</li>
-<li>Yellow circles: Deck 2 mounting holes (onto deck 1)</li>
-</ul>
-<p><a href="images/deck3.jpg">Deck 3</a>
-<!-- <img alt="deck3" src="images/deck3.jpg" title="Deck 3 mounting holes" /> --></p>
-<p><img src="images/deck3.jpg" data-canonical-src="images/deck3.jpg" width="800px" title="Deck 3 mounting holes" /></p>
-<ul>
-<li>Red circles: Deck 3 mounting holes (onto deck 1)</li>
-<li>Green circles: Hokuyo lidar mounting holes</li>
-<li>Dotted green circles: RPLidar A2/A3 mounting holes (to, optionally, replace the Hokuyo Lidar)</li>
-</ul>
-<h4 id="prepare-the-lidar-connector">Prepare the Lidar Connector</h4>
-<p>Add a barrel plug to power the Lidar</p>
-<h4 id="prepare-the-chassis">Prepare the Chassis</h4>
-<ul>
-<li>Remove the plastic shell</li>
-<li>Remove the front and rear shell mounts</li>
-<li>Replace the hold-downs<ul>
-<li>On the bottom side of the chassis there are four bolts that secure the battery hold-downs. Remove the bolts and replace each hold-down piece with the equivalent piece from the new set.</li>
-</ul>
-</li>
-<li>Insert the Traxxas battery into its battery hold-downs and secure with the battery bar.</li>
-<li>Remove the ESC by unfastening the screws that hold it down.<ul>
-<li>If your VESC does not come with the same plug-in connectors, cut off the connectors from the Traxxas ESC and solder them onto the VESC (order does not matter).</li>
-</ul>
-</li>
-<li>Remove the receiver box<ul>
-<li>Open the receiver box</li>
-<li>Unfasten the two screws that hold the receiver box down to remove it.</li>
-</ul>
-</li>
-<li>Prepare the VESC<ul>
-<li>If the VESC does not have a male Traxxas connector, solder the one from the Traxxas ESC to it.</li>
-<li>Connect the servo motor to the servo cable on the VESC. Add a piece of electric tape to ensure that the cables will not come loose (optional).<ul>
-<li>If the VESC servo cable is also a female (smaller) plug (same as steering servo cable), either buy a cable that will handle the conversion or assemble your own male-to-male 3-pin converter. To do the latter, you may cut off two female ends from servo cable and solder them together or solder two 3-pin male headers together.</li>
-</ul>
-</li>
-<li>Connect the three DC motor cables to the VESC.<ul>
-<li>The order does not matter. When testing the car, if the car moves in the opposite direction you can swap any two connections to fix the driving direction.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Install 2x 10mm metal standoffs on the rear mounting deck's inner holes.</li>
-<li>Install 2x 20mm metal standoffs on the front mounting deck's inner holes.</li>
-</ul>
-<p>Once complete, the chassis should look similar to that in the <a href="images/chassis_top_with_vesc.jpg">figure below</a>.</p>
-<!--![chassis_top_with_vesc](images/chassis_top_with_vesc.jpg "Chassis top side with VESC")-->
-
-<p><img src="images/chassis_top_with_vesc.jpg" data-canonical-src="images/chassis_top_with_vesc.jpg" width="800px" title="Chassis top side with VESC" /></p>
-<h4 id="adding-encoders-optional">Adding Encoders (Optional)</h4>
-<p>To get estimates of instantaneous velocity, the car supports adding rear wheel encoders to measure the number of wheel rotations. To install the encoders follow these steps.</p>
-<ul>
-<li>Check that the encoder hole and the encoder mount hole align. Sometimes 3D printing results in residue inside the mount making it difficult to mount the encoders. Carefully remove any residue.</li>
-<li>For each encoder disc, color the recessed portions of the disc with a contrasting color to obtain an alternating pattern.</li>
-<li>Remove the rear wheels using the Traxxas supplied lug ranch.</li>
-<li>Install the encoder disks onto the inside of the wheels.<ul>
-<li>Use a hot glue gun on the wheel strokes secure the disks in place.</li>
-</ul>
-</li>
-</ul>
-<p>The wheels with encoders should look like that in the <a href="images/wheel_enc_disk.jpg">figure below</a>.
-<!--<img alt="wheel_enc_disk" src="images/wheel_enc_disk.jpg" title="Wheels with encoder disks" /> --></p>
-<p><img src="images/wheel_enc_disk.jpg" data-canonical-src="images/wheel_enc_disk.jpg" width="300" title="Wheels with encoder disks" /></p>
-<ul>
-<li>Install an encoder mount on rear hub carriers (blue).<ul>
-<li>Place the mount as close to the base of the carrier as possible such that the mount's opening is on the top.</li>
-<li>Use a hot glue gun to secure the mount in place at a vertical position</li>
-</ul>
-</li>
-<li>Take two servo cables, cut off the male (larger) end to obtain male-to-exposed wire servo connectors.</li>
-<li>Solder the exposed wires to the encoders per the following<ul>
-<li>Black/ Brown servo wire to encoder VCC pin</li>
-<li>Red servo wire to encoder OUT pin</li>
-<li>White/ Orange servo wire to encoder GND pin</li>
-</ul>
-</li>
-<li>Place each encoder into its mount and secure it using a ?(10?)mm M3 screw and its corresponding nut.</li>
-<li>Run the servo cable to the center of the car.</li>
-</ul>
-<p>The mounted encoders should look like that in the <a href="images/enc_mount.jpg">figure below</a>.
-<!-- <img alt="enc_mnt" src="images/enc_mount.jpg" title="Line sensor breakout in the encoder mounts" /> -->
-<img src="images/enc_mount.jpg" data-canonical-src="images/enc_mount.jpg" width="400px" title="Line sensor breakout in the encoder mounts" /></p>
-<ul>
-<li>Place back the rear wheels and tighten the nut.</li>
-</ul>
-<h4 id="replace-the-chassis-springs">Replace the Chassis Springs</h4>
-<p>Replace the springs with stiffer springs (see video)</p>
-<h4 id="prepare-the-teensy-teensy-pcb">Prepare the Teensy/ Teensy PCB</h4>
-<ul>
-<li>Solder 2x 24-pin male headers onto the Teensy 3.5.</li>
-</ul>
-<p>If you manufactured the Teensy PCB follow these steps:</p>
-<ul>
-<li>Solder 2x 24-pin female headers onto the PCB.</li>
-<li>At BL_ENC and BR_ENC solder 2x 3-pin male headers.</li>
-<li>At US1, ..., US8 solder 8x 4-pin male headers.</li>
-</ul>
-<p>If you are using a protoboard to make the Teensy circuit, follow the circuit diagram in the <a href="">figure below</a> to make the above ports and connections.</p>
-<p>You may also choose to cut off one side of the 4-pin connectors and solder the wires directly to Teensy header pins as in <a href="images/deck1_bottom_proto.jpg">this figure</a>.
-<!-- <img alt="deck1_bottom_proto" src="images/deck1_bottom_proto.jpg" title="Teensy on a protoboard" /> --></p>
-<p><img src="images/deck1_bottom_proto.jpg" data-canonical-src="images/deck1_bottom_proto.jpg" width="800px" title="Teensy on a protoboard" /></p>
-<h4 id="prepare-the-decks-and-assemble-the-car">Prepare the Decks and Assemble the Car</h4>
-<p>Preparing the decks will involve working on both sides of the boards. As such we recommend having a box (with one side fully open) at hand to provide support and elevation for the decks will undergoing assembly</p>
-<p>Follow these steps:</p>
-<ul>
-<li>Deck 1:<ul>
-<li>Mount the ultrasonics onto the ultrasonic mounts and secure the mounts onto the top side of deck 1. You may also install the mounts on the deck first.<ul>
-<li>Use 2x M2x?mm bolts and 2x M2 nuts to mount each ultrasonic sensor. Use diagonal holes.</li>
-<li>Use 2x M2.5x?mm bolts and 2x M2.5 nuts to secure each mount onto the decks. Use diagonal holes.</li>
-</ul>
-</li>
-<li>Mount the Teensy PCB (or protoboard) onto the bottom of deck 1.<ul>
-<li>Use 2x 6mm plastic screws to secure 2x 10mm spacers onto the bottom of the PCB (this will elevate the PCB).</li>
-<li>Use 2x 10mm plastic screws to secure the PCB onto the deck. The screws should go in from through the top side and secure the PCB on the bottom.</li>
-</ul>
-</li>
-<li>Add the Teensy to the PCB.</li>
-<li>Connect a four pin connectors to each ultrasonic sensor, pass it the bottom of the deck and connect it onto the PCB. The wire connected to the VCC pin on the ultrasonic sensor should connect to the pin closest to the port name on the PCB (VCC pin on the board).</li>
-<li>Pass the rear wires through the slot near them. Use a zip tie to secure the wires to the bottom of the deck (using the rear-most parallel slits).</li>
-<li>Pass the two middle wires through the slot near them. Pass the side wires down at the sides of the deck. Use a zip tie to secure the wires to the bottom of the deck (using the front-most parallel slits).</li>
-<li>Add the IMU to the top side of deck 1.<ul>
-<li>Considering the top side of the IMU to be the side with the USB port, pass the screw end of the vibration damper through the IMU's bottom side and secure them with M3 nuts on the top side.</li>
-<li>Use 4x 8mm metal screws, pass them from the bottom of the deck, and secure the IMU onto deck 1 such that the USB port point to the left side of the car.</li>
-</ul>
-</li>
-<li>Add the SSD to the top side of deck 1.<ul>
-<li>Use 4x 12mm screws, pass them from the bottom of the deck, and add a nut on the top side but keep it loose. Do not tighten the nut yet.</li>
-<li>Position the SSD on top of the nuts then tighten the screws to secure the SSD onto the deck.</li>
-<li>Note that the nut will provide the necessary elevation for the SSD to account for the zip-tie.</li>
-</ul>
-</li>
-<li>Install the LIDAR deck (deck 3) mounts.<ul>
-<li>Insert 4x 10mm metal bolts from the bottom of deck 1 and secure them with 4x 10mm standoffs.</li>
-<li>The standoffs should have the screw portion to the top.</li>
-</ul>
-</li>
-<li>Install the Jetson mounts.<ul>
-<li>Insert 4x 20mm bolts through the bottom of deck 1 and secure them with 10mm spacers.</li>
-<li>The protruding portion of the bolt will be used to secure the Jetson.</li>
-</ul>
-</li>
-<li>Install the deck 2 mounts.<ul>
-<li>Using 5x 12mm screws through the bottom of deck 1, secure 5x 100mm standoffs.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>At this point, deck 1 should looks like these <a href="images/deck1_top.jpg">top</a>, <a href="images/deck1_bottom_pcb.jpg">bottom</a>, and <a href="images/deck1_side.jpg">side</a> images.
-<!-- <img alt="deck1_top" src="images/deck1_top.jpg" title="Deck 1 top view" /> --></p>
-<p><img src="images/deck1_top.jpg" data-canonical-src="images/deck1_top.jpg" width="800px" title="deck1_top.jpg" /></p>
-<!--![deck1_bottom_pcb](images/deck1_bottom_pcb.jpg "Deck 1 bottom view") -->
-
-<p><img src="images/deck1_bottom_pcb.jpg" data-canonical-src="images/deck1_bottom_pcb.jpg" width="800px" title="Deck 1 bottom view" /></p>
-<!--![deck1_side](images/deck1_side.jpg "Deck 1 side view") -->
-
-<p><img src="images/deck1_side.jpg" data-canonical-src="images/deck1_side.jpg" width="800px" title="Deck 1 side view" /></p>
-<ul>
-<li>Install the Jetson TX2 board onto deck 1.<ul>
-<li>Using the protruding Jetson TX2 mounting bolts, place the Jetson (WiFi to the right side of the car) onto deck 1 and secure it with 4x M3 nuts.</li>
-<li>Attached a SATA with power extension cable from the SSD to the Jetson's SATA port.</li>
-<li>Install the Jetson's WiFi antennas.</li>
-</ul>
-</li>
-<li>Mount deck 1 onto the chassis.<ul>
-<li>Using 4x 12mm metal bolts mount deck 1 onto the chassis through the standoffs installed onto the front and rear chassis mounting decks.</li>
-</ul>
-</li>
-</ul>
-<p>The car should look like that in the <a href="images/deck1_installed.jpg">figure below</a>
-<!-- <img alt="deck1_installed" src="images/deck1_installed.jpg" title="Deck 1 installed on the chassis" /> --></p>
-<p><img src="images/deck1_installed.jpg" data-canonical-src="images/deck1_installed.jpg" width="800px" title="Deck 1 installed on the chassis" /></p>
-<ul>
-<li>Deck 3 (LIDAR deck):<ul>
-<li>Add a bit (pea sized blob) of thermal paste onto the bottom of the Hokuyo Lidar (Optional).</li>
-<li>Secure the Lidar onto the deck using 2x 6mm or 8mm bolts.</li>
-<li>Mount deck 3 onto deck 1 through the deck 3 standoffs. Secure the deck using 4x M3 nuts.</li>
-<li>Connect ethernet cable to the Jetson.</li>
-<li>Pass the power cable to the rear end of the car. Use zip-ties and slits to secure the cable appropriately.</li>
-</ul>
-</li>
-</ul>
-<p>Once deck 3 is connected, the car should look like that in <a href="images/deck3_installed.jpg">this figure</a>.
-<!-- <img alt="deck3_installed" src="images/deck3_installed.jpg" title="Deck 3 installed on deck 1" /> --></p>
-<p><img src="images/deck3_installed.jpg" data-canonical-src="images/deck3_installed.jpg" width="800px" title="Deck 3 installed on deck 1" /></p>
-<ul>
-<li>Deck 2:<ul>
-<li>Mount the ELP cameras.<ul>
-<li>Unplug the USB cable for ease of installation.</li>
-<li>Mount the ELP camera base mounts onto the top side of deck 2. Use 2x ?mm M? screws and corresponding nuts to secure each base.</li>
-<li>Place the ELP cameras onto their mounting decks. Use 2x 6?mm M2.5 screws to secure the cameras. Place the cameras with upside-down and have the closed portion of the ELP mounting decks point down (so that it carries the ELP camera).</li>
-<li>Mount the ELP mounting decks onto the base mounts using a 10mm M2.5 bolt and the corresponding nut</li>
-</ul>
-</li>
-<li>Mount the ZED camera.<ul>
-<li>Use a 1/4" screw to fasten a camera head (any generic 1/4" camera mounting head/ tripod head works) onto the top of deck 2. Use any of the 1/4" holes (larger holes).</li>
-</ul>
-</li>
-<li>Using two equally sized pieces of Velcro tape, secure the USB hub onto the bottom side of deck 2. Place it close to the rear end of the deck.</li>
-<li>Using two equally sized pieces of Velcro tape, secure the battery onto the top rear end of deck 2.</li>
-</ul>
-</li>
-</ul>
-<p>The bottom side of deck 2 should look like that in Fig 9.
-<Fig 9></p>
-<ul>
-<li>
-<p>Mount deck 2 onto deck 1.</p>
-<ul>
-<li>Using 5x 12mm metal screws secure deck 2 onto its mounting standoffs on deck 1.</li>
-</ul>
-</li>
-<li>
-<p>Use zip-ties and slits to manage the cables.</p>
-</li>
-</ul>
-<p>This concludes the car assembly. It should look like the car in the <a href="images/deck2_installed.jpg">top</a> and <a href="images/super_como.jpg">side</a> view images.
-<!--<img alt="deck2_installed" src="images/deck2_installed.jpg" title="Top view of the assembled car" /> --></p>
-<p><img src="images/deck2_installed.jpg" data-canonical-src="images/deck2_installed.jpg" width="800px" title="Top view of the assembled car"/></p>
-<!--![super_como](images/super_como.jpg "Fully assembled Super COMO car") -->
-
-<p>Final image of car
-<img src="images/super_como.jpg" data-canonical-src="images/super_como.jpg" width="1100px" title="Fully assembled Super COMO car"/></p>
+<p>Super COMO is a high-end 1/10-scale autonomous RC car initiative at the University of Texas at Dallas. This assembly guide is based on the initial car build which was prepared in partial fulfillment of the EE/CE/TE Senior Design project for Fall 2018-Spring 2019.
+<img src="images/car_front.jpg" data-canonical-src="images/car_front.jpg" width="800px" title="Super COMO" /></p>
+<p><img src="images/car_side.jpg" data-canonical-src="images/car_side.jpg" width="800px" title="Super COMO" /></p>
                 
                   
                 
@@ -851,13 +379,13 @@
       <nav class="md-footer-nav__inner md-grid">
         
         
-          <a href="arduinosetup/" title="Arduino for Teensy" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="assembly/" title="Car Assembly" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Arduino for Teensy
+                Car Assembly
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

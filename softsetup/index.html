@@ -102,6 +102,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#installation-guide" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -245,6 +249,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../assembly/" title="Car Assembly" class="md-nav__link">
+      Car Assembly
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../arduinosetup/" title="Arduino for Teensy" class="md-nav__link">
       Arduino for Teensy
     </a>
@@ -286,6 +302,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
     
     <a href="./" title="Car Software Setup" class="md-nav__link md-nav__link--active">
       Car Software Setup
@@ -313,6 +331,21 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -321,9 +354,156 @@
                   <a href="https://github.com/The-SS/super_como/edit/master/docs/softsetup.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Car Software Setup</h1>
-                
-                <p>Software setup goes here</p>
+                <h2 id="installation-guide">Installation Guide</h2>
+<p>Before installing the Super COMO packages, perform a full JetPack installation on the Jetson TX2. For the package, JetPack 3.2.1 was installed. </p>
+<p>After installing JetPack, follow the steps below to setup Super COMO.</p>
+<ol>
+<li>
+<p>Configure repositories:
+Configure repositories to allow "restricted," "universe," and "multiverse." Do this by following the instructions in <a href="https://help.ubuntu.com/community/Repositories/Ubuntu">this link</a>.</p>
+</li>
+<li>
+<p>Clone super_como :
+Clone the repository to your home directory. In a terminal window run:</p>
+</li>
+</ol>
+<pre><code>cd ~ &amp;&amp; git clone https://github.com/The-SS/super_como
+</code></pre>
+
+<ol>
+<li>Navigate to setup folder:
+In terminal, navigate to the <code>setup</code> folder in <code>super_como</code> by running:</li>
+</ol>
+<pre><code>cd ~/super_como/setup
+</code></pre>
+
+<ol>
+<li>Configure git (if not configured):
+Configure git either manually or by running <code>git_config_setup.sh</code>. You can run the setup file as follows:</li>
+</ol>
+<pre><code>./git_config_setup.sh
+</code></pre>
+
+<ol>
+<li>Run the following scripts:</li>
+</ol>
+<pre><code>./install_programs.sh
+
+./install_ros.sh
+
+</code></pre>
+
+<ol>
+<li>Download and install the ZED SDK:</li>
+<li>
+<p>Go to the <a href="https://www.stereolabs.com/developers/release/#sdkdownloads_anchor">ZED downloads</a> website and download the <a href="https://download.stereolabs.com/zedsdk/2.7/tegrax2">ZED SDK for Jetson TX2 with JetPack 3.2 and CUDA 9</a>.</p>
+</li>
+<li>
+<p>Once it downloads, either used <code>chmod +x &lt;file_name&gt;</code> to make the file and executable or right click it --&gt; permissions --&gt; allow executing file as a program.</p>
+</li>
+<li>
+<p>Run the script by <code>cd</code> to file location in a terminal and typing <code>./</code> followed by the file name.</p>
+</li>
+<li>
+<p>Setup the device rules:
+Run the rules set up script:</p>
+</li>
+</ol>
+<pre><code>sudo ./rules_setup.sh
+</code></pre>
+
+<p>This script will reload the rules, but we recommend restarting the machine to ensure that the rules are in effect.</p>
+<ol>
+<li>Run the build script:
+The <code>build.sh</code> script at the root of the super_como package builds the catkin workspace. In a terminal window, navigate to the root of the super_como package then run the following command:</li>
+</ol>
+<pre><code>cd ~/super_como
+./build.sh
+</code></pre>
+
+<ol>
+<li>Generate the <code>ros_lib</code> libraries for arduino:</li>
+<li>Go the the Arduino <code>libraries</code> direcotry: </li>
+</ol>
+<pre><code>cd ~/arduino-1.8.7/libraries
+</code></pre>
+
+<ul>
+<li>Remove any previous <code>ros_lib</code> directory:</li>
+</ul>
+<pre><code>rm -fr ros_lib
+</code></pre>
+
+<ul>
+<li>Generate the new libraries:</li>
+</ul>
+<pre><code>rosrun rosserial_arduino make_libraries.py .
+</code></pre>
+
+<p>For more details see the Install ros_lib into the Arduino Environment section <a href="http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup">here</a>.</p>
+<ol>
+<li>Source the workspace:
+Every time a new terminal window is open you have to source your workspace.</li>
+</ol>
+<pre><code>source ~/super_como/workspace/devel/setup.bash
+</code></pre>
+
+<p>Alternatively, you can add this to the bashrc file to avoid having to do that every time.</p>
+<pre><code>echo &quot;source ~/super_como/workspace/devel/setup.bash&quot; &gt;&gt; ~/.bashrc
+</code></pre>
+
+<p>Once this is performed you have to restart your terminal or source the bashrc file as follows:</p>
+<pre><code>source ~/.bashrc
+</code></pre>
+
+<ol>
+<li>Add the Lidar to ethernet networks:</li>
+<li>Open <code>Network Connections</code>.</li>
+<li>Click on <code>Add</code>.</li>
+<li>
+<p>In the new window do the following:</p>
+<ul>
+<li>Change the connection name to <code>lidar</code></li>
+<li>In the <code>General</code> tab, check the <code>Automatically connect to this network when it is available</code> and <code>All users may connect to this network</code> options</li>
+<li>In the <code>IPv4 Settings</code> tab, change the <code>method</code> to <code>Manual</code> and add the following in <code>Addresses</code>:<ul>
+<li>address: 192.168.0.15</li>
+<li>netmask: 255.255.255.0 (this will change to 24)</li>
+<li>leave the <code>gateway</code> field empty</li>
+</ul>
+</li>
+<li>Click save.</li>
+</ul>
+</li>
+<li>
+<p>Edit the USB port names:
+The rules file generated by <code>rules_setup.sh</code> creates symbolic links for devices that should be used instead of the port names generated by Linux. The full list of symbolic links found in <code>/etc/udev/rules/99-device-rules.rules</code> is:</p>
+</li>
+<li><code>/dev/imu</code>: IMU</li>
+<li><code>/dev/vesc</code>: VESC </li>
+<li><code>/dev/teensy</code>: Teensy</li>
+<li><code>/dev/elp/back</code>: back elp camera</li>
+<li><code>/dev/elp/right</code>: righ elp camera</li>
+<li><code>/dev/elp/left</code>: left elp camera</li>
+<li><code>/dev/elp/front</code>: front elp camera</li>
+</ol>
+<p>These links should be used in the package (instead of <code>/dev/ttyUSB*</code>, <code>/dev/ttyACM*</code>, or <code>/dev/video*</code>). Make the following modifications to the package:
+- In <code>~/super_como/super_como/workspace/src/racecar/racecar/config/racecar-v2/vesc.yaml</code> change the <code>port</code> parameter under <code>vesc_driver</code> to <code>/dev/vesc</code>.
+- In <code>~/super_como/workspace/src/razor_imu_9dof/config/razor.yaml</code> change the <code>port</code> parameter to <code>/dev/imu</code>.
+- In <code>~/super_como/workspace/src/razor_imu_9dof/nodes/imu_node.py</code> change the <code>default_port</code> variable to <code>'/dev/imu'</code> (line 110). The updated line should be: <code>default_port='/dev/imu'</code>.</p>
+<ol>
+<li>If running YOLO, change the <code>darknet_ros</code> camera topic: 
+In <code>~/super_como/workspace/src/darknet_ros/darknet_ros/config/ros.yaml</code> change the <code>topic</code> parameter under <code>camera_reading</code> in <code>subscribers</code> to the desired image topic. For example that could be the <code>/zed/left/image_raw_color</code> topic if using the ZED or ZED mini cameras. Check the <a href="https://github.com/leggedrobotics/darknet_ros/tree/7bc7ec0517b7107712da998f975584c88ed15f77">YOLO github repository</a> for more details.</li>
+</ol>
+<h1 id="optional">Optional:</h1>
+<ul>
+<li>Setting up team viewer</li>
+<li>Setting up optional Bluetooth Xbox one controller script</li>
+<li>bldc tool download, install, and programming vesc</li>
+</ul>
+<h5 id="please-reference-the-super-como-github-to-clone-the-software-package">Please reference the Super COMO Github to clone the software package</h5>
+<p><a href="https://github.com/The-SS/super_como">
+<img src="../images/githublogo.png" data-canonical-src="../images/githublogo.png" width="200px" title="Super COMO Github" />
+</a></p>
                 
                   
                 
